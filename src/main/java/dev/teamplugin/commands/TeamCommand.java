@@ -51,7 +51,7 @@ public class TeamCommand extends AbstractPlayerCommand {
             else{
                 send(playerRef, "Team Name: " + team.getTeamName(), plugin.parseColor(team.getColor()));
                 send(playerRef, "Player Count: " + team.getTeamSize(), plugin.parseColor(team.getColor()));
-                send(playerRef, "PvpEnabled: " + team.getFriendlyPVP(), plugin.parseColor(team.getTeamName()));
+                send(playerRef, "PvpEnabled: " + team.getFriendlyPVP(), plugin.parseColor(team.getColor()));
             }
             return;
         }
